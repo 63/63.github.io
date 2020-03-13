@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/autistic
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://autistic.wtf
+  * I am autistic (https://keybase.io/autistic) on keybase.
+  * I have a public key with fingerprint A966 6B2C CA8D 38F0 46F8  9C09 5C2D 0654 A5D0 D444
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01011c9f51ccb308b6a76641c691f24c00258de039a310543daab7a09dec2c70a33a0a",
+      "fingerprint": "a9666b2cca8d38f046f89c095c2d0654a5d0d444",
+      "host": "keybase.io",
+      "key_id": "5c2d0654a5d0d444",
+      "kid": "01011c9f51ccb308b6a76641c691f24c00258de039a310543daab7a09dec2c70a33a0a",
+      "uid": "554047c304e249284fb3d7501360d319",
+      "username": "autistic"
+    },
+    "service": {
+      "hostname": "autistic.wtf",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1584069926,
+  "expire_in": 157680000,
+  "prev": "51c73defee4c30e06795bc3bd5074602d49b853fc4afbc2928afa470e3b84c23",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJJaBRBFJ04UXGiYFDcIggdFMFxrO6q3sYgajBqJLiBSwgZq6urJ53J
+LHb3ZCYmA2IiEUElombBQ1SMSdCoIKgHwX1BRFFRUURBgkh0PCiimMVql4t4tC5F
+/Xrv/fc+//oEr8eXk9j7cPNwD7yZc/dKW9JTWT00p57T4nodF6znIvTnRWt0ajuh
+iKlzQQ7wgOeJaog8IRoEiiZhWZIQTySVNwREABBERacAqhjyQERQx1iTMVB1SgQi
+AwwhBpjzc4YZC1MrYZkxh8liVZIkTSAEKzpUDIAkQ1EJUEUi6EASERZ1oCOEGLEq
+brsMZk7DNg2YcVZjj9BPe//A/2ffyV99RASQTCBAVECqoCBDg7osAh5KQIe86gJt
+asVwlLrpko5pOybhMn6OVWtNQt3Bukn+QgRSjsG4CSvuxEm8hv1UOU7CDrpMpy7h
+QlNUC/0WCWlmTGdzZIxaatlmPMYFeYYkjumq8qKCgKSqguTnaDphWjRkughRlhTA
+jtuH1rppeCJDnRqUIhaJAklWRY1ATReBjCQg6EjVFBEaBGFDIwLLiw2MZEChpiAi
+QM6NtTUWZ9qI+cRhpmmb4Rh2khblMlcvV+R6cnyeMaNHuQvm8Y2b+GftYGzsSOnZ
+9sqK7ujHA09eRA94vy+ZObYxmds8bmgwWP/yUKu9MffhmGUDkTv3+6oz2VV7jj9y
+8mZFS0arxS3pzzuzvetqmqYfDRR1Wr6zF/zfB+afqziyLzVhd4PybXlpR3HTl/G9
+w5HTIMF1Xm1Z/CaTbSzvf7DjxK7Va3fnd6w/khloudZpryzqwAv61hzbcmni/srt
+ZSc39Wz7mi6TOflGeCQwZUZ6Kf9qXkvz7Q1vb3kXT3NGyrzZ9KdMUVfD1MnlpQV5
+sxrmXnxWteB8yf2t/c+rp5T4321adLBQel1ekN+98PXswv4vdw/2rlk02HVvW1vr
+47bwqfZrwoqneya9eL9i1Ye+1OEzPwBCfkBa
+=U/77
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/autistic
+
+==================================================================
