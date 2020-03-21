@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> autistic </title>
+        <title>autistic.wtf</title>
         <link type="text/css" rel="stylesheet" href="assets/css/fade.css">
         <link type="text/css" rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">    
     </head>
     <body>
+		<div class="details animated delay-short fadeIn">
+			<h2 id="time"></h2>
+		</div>
         <div class="container">
             <div class="sub animated fadeInDown">
                 <img class="skin" src="assets/images/profile.png">
@@ -28,11 +31,53 @@
         <audio autoplay loop preload="auto" id="music" src="assets/music/music.mp3">
         Update your browser.
         </audio>
+
         <script type="text/javascript">
+		displayClock();
+		
         window.onload = function() {
             var backgroundAudio=document.getElementById("music");
             backgroundAudio.volume=0.1;
         }
+		
+		function displayClock(){
+			var display = new Date().toLocaleTimeString();
+			document.getElementById("time").innerHTML = display;
+			setTimeout(displayClock, 1000); 
+		}
+		var rev = "fwd";
+		function titlebar(val){
+			var msg  = "autistic.wtf";
+			var res = " ";
+			var speed = 100;
+			var pos = val;
+			msg = "   |-"+msg+"-|";
+			var le = msg.length;
+			if(rev == "fwd"){
+				if(pos < le){
+					pos = pos+1;
+					scroll = msg.substr(0,pos);
+					document.title = scroll;
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				} else {
+					rev = "bwd";
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				}
+			} else {
+				if(pos > 0) {
+					pos = pos-1;
+					var ale = le-pos;
+					scrol = msg.substr(ale,le);
+					document.title = scrol;
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				} else {
+					rev = "fwd";
+					timer = window.setTimeout("titlebar("+pos+")",speed);
+				}
+			}
+		}
+	    titlebar(0);
+
         </script>    
     </body>
 </html>
