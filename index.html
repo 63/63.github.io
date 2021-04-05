@@ -45,39 +45,32 @@
 			document.getElementById("time").innerHTML = display;
 			setTimeout(displayClock, 1000); 
 		}
-		var rev = "fwd";
-		function titlebar(val){
-			var msg  = "autistic";
-			var res = " ";
-			var speed = 100;
-			var pos = val;
-			msg = "   |-"+msg+"-|";
-			var le = msg.length;
-			if(rev == "fwd"){
-				if(pos < le){
-					pos = pos+1;
-					scroll = msg.substr(0,pos);
-					document.title = scroll;
-					timer = window.setTimeout("titlebar("+pos+")",speed);
-				} else {
-					rev = "bwd";
-					timer = window.setTimeout("titlebar("+pos+")",speed);
+		
+		var i = 0;
+		var inc = true;
+		var txt = 'autistic';
+		document.title = ' '
+		function title() {
+  			if (i < txt.length && inc) {
+    			document.title += txt.charAt(i);
+    			i++;
+				if (i >= txt.length) {
+					inc = false;
 				}
-			} else {
-				if(pos > 0) {
-					pos = pos-1;
-					var ale = le-pos;
-					scrol = msg.substr(ale,le);
-					document.title = scrol;
-					timer = window.setTimeout("titlebar("+pos+")",speed);
+    			setTimeout(title, 400);
+  			} else if (!inc) {
+				if (i <= 0) {
+					inc = true;
+					document.title = ' ';
 				} else {
-					rev = "fwd";
-					timer = window.setTimeout("titlebar("+pos+")",speed);
+					document.title = document.title.slice(0, -1);
 				}
+				i--;
+				setTimeout(title, 400);
 			}
 		}
-	    titlebar(0);
 
+		title();
         </script>    
     </body>
 </html>
